@@ -40,11 +40,6 @@
             <a href="#hero" class="header-logo" aria-label="Voltar ao topo">
                 <img src="img/logo.PNG" alt="Yuri Hair Stylist Logo" class="logo-img">
             </a>
-            <div class="hero-branding">
-                <h1 class="hero-title">Yuri</h1>
-                <p class="hero-subtitle">hair stylist</p>
-            </div>
-            <a href="#portfolio" class="hero-cta">Ver Meu Trabalho</a>
         </div>
     </header>
 
@@ -136,7 +131,7 @@
         <div class="container mx-auto px-6 max-w-3xl">
             <header class="contact-header text-center mb-14" data-scroll>
                 <h2 class="text-4xl md:text-5xl font-bold mb-4 tracking-wide">Agende um Horário</h2>
-                <p class="text-muted text-lg max-w-xl mx-auto">A forma mais rápida é pelo WhatsApp. Prefere e-mail? Manda uma mensagem abaixo — respondo o mais breve possível.</p>
+                <p class="text-muted text-lg max-w-xl mx-auto">Me chama no WhatsApp — respondo o mais breve possível.</p>
             </header>
 
             <!-- Primary CTA: WhatsApp -->
@@ -156,33 +151,6 @@
                 </div>
             </div>
 
-            <!-- Divider -->
-            <p id="contactDivider" class="contact-divider text-center text-sm uppercase tracking-widest mb-8" data-scroll>ou envie um e-mail</p>
-
-            <!-- Secondary: Email form -->
-            <div class="contact-card contact-card-email" data-scroll>
-                <form class="contact-form" id="contactForm">
-                    <div class="contact-form-grid">
-                        <div class="contact-field">
-                            <label for="name" class="contact-label">Nome</label>
-                            <input type="text" id="name" name="name" required maxlength="100" minlength="1" autocomplete="name" class="contact-input" placeholder="Seu nome" aria-required="true" aria-label="Seu nome completo">
-                        </div>
-                        <div class="contact-field">
-                            <label for="email" class="contact-label">E-mail</label>
-                            <input type="email" id="email" name="email" required maxlength="255" autocomplete="email" class="contact-input" placeholder="voce@exemplo.com" aria-required="true" aria-label="Seu endereço de e-mail">
-                        </div>
-                        <div class="contact-field contact-field-full">
-                            <label for="message" class="contact-label">Sua mensagem</label>
-                            <textarea id="message" name="message" rows="4" required maxlength="5000" minlength="10" class="contact-input contact-textarea" placeholder="Me conte o que você tem em mente para o seu cabelo…" aria-required="true" aria-label="Sua mensagem"></textarea>
-                            <p class="contact-hint">Mínimo de 10 caracteres</p>
-                        </div>
-                        <div class="contact-field contact-field-full">
-                            <div id="formMessage" class="contact-message hidden" role="alert"></div>
-                            <button type="submit" class="btn-email">Enviar mensagem</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
         </div>
     </section>
 
@@ -276,7 +244,7 @@
             const header = document.getElementById('mainHeader');
             const logoImg = header ? header.querySelector('.header-logo .logo-img') : null;
             const scrollRange = 420;
-            const logoHeroH = 280;
+            const logoHeroH = 350;
             const logoCollapsedH = 140;
             let smoothProgress = 0;
             let headerTicking = false;
