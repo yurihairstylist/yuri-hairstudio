@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hairstylist em Uberlândia especializado em cortes, coloração, degradê e muito mais. Agende seu horário hoje.">
+    <meta name="keywords" content="hairstylist, cabeleireiro, uberlândia, cabelo cacheado, crespo, degradê, corte, coloração, balayage">
+    <meta name="author" content="Yuri">
+
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self';">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Yuri | Hairstylist">
+    <meta property="og:description" content="Hairstylist em Uberlândia especializado em cortes, coloração, degradê e muito mais.">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Yuri | Hairstylist">
+    <meta name="twitter:description" content="Hairstylist em Uberlândia especializado em cortes, coloração, degradê e muito mais.">
+
+    <title>Yuri | Hairstylist</title>
+    <link rel="icon" href="favicon.ico" sizes="32x32" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+</head>
+<body class="bg-warm-dark text-white overflow-x-hidden">
+    <!-- Fixed Header: centered (logo + title + button) in hero, then logo-only bar at top on scroll -->
+    <header class="fixed-header" id="mainHeader">
+        <div class="header-inner">
+            <a href="#hero" class="header-logo" aria-label="Voltar ao topo">
+                <img src="img/logo.PNG" alt="Yuri Hair Stylist Logo" class="logo-img">
+            </a>
+            <div class="hero-branding">
+                <h1 class="hero-title">Yuri</h1>
+                <p class="hero-subtitle">hair stylist</p>
+            </div>
+            <a href="#portfolio" class="hero-cta">Ver Meu Trabalho</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero h-screen relative overflow-hidden">
+        <div class="hero-overlay absolute inset-0 z-10" aria-hidden="true"></div>
+        <div class="hero-bg-wrap absolute inset-0">
+            <div class="hero-bg hero-bg-a absolute inset-0 bg-cover bg-center" id="heroBgA" role="presentation"></div>
+            <div class="hero-bg hero-bg-b absolute inset-0 bg-cover bg-center" id="heroBgB" role="presentation"></div>
+        </div>
+        <div class="hero-scroll absolute bottom-10 left-0 right-0 text-center z-20">
+            <div class="scroll-indicator animate-bounce" aria-hidden="true"></div>
+        </div>
+    </section>
+
+    <!-- Video Background Section 1 -->
+    <section class="video-section">
+        <div class="video-background">
+            <video autoplay loop muted playsinline class="video-element" onerror="this.style.display='none';">
+                <source src="video/divider-1.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about py-20 relative">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+            <div class="about-image-wrap reveal-left" data-scroll>
+                <div class="about-image-frame">
+                    <img src="img/profile.jpeg" alt="Yuri - Hair Stylist" class="about-image-img">
+                </div>
+            </div>
+            <div class="about-content reveal-right" data-scroll>
+                <h2 class="text-4xl font-bold mb-6">Sobre Mim</h2>
+                <p class="text-lg mb-4">Olá! Meu nome é Yuri, sou hairstylist na cidade de Uberlândia. Minha jornada começou em 2022, nos fundos da minha casa, e rapidamente foi ganhando proporção, reconhecimento e novas oportunidades através dos lugares por onde passei e das pessoas com quem tive o privilégio de trabalhar.</p>
+                <p class="text-lg mb-4">Sou conhecido pelo meu trabalho em cabelos com curvatura, mas hoje atuo com uma grande diversidade de estilos. Atendo desde cabelos longos, cacheados, crespos e ondulados até cortes mais curtos e modernos. Entre eles, realizo degradês, freestyle, pixie, cortes experimentais e muito mais — sempre buscando valorizar a identidade e a beleza única de cada pessoa.</p>
+                <p class="text-lg mb-8">Meu objetivo vai além de um simples corte: quero proporcionar uma experiência que respeite a individualidade de cada pessoa, unindo técnica, criatividade e paixão pelo que faço.</p>
+                <a href="#contact" class="btn-secondary">Entre em Contato</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Background Section 2 -->
+    <section class="video-section">
+        <div class="video-background">
+            <video autoplay loop muted playsinline class="video-element" onerror="this.style.display='none';">
+                <source src="video/divider-2.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio py-20 relative">
+        <div class="container mx-auto px-6">
+            <header class="portfolio-header text-center mb-14" data-scroll>
+                <h2 class="text-4xl font-bold mb-4">Meu Trabalho</h2>
+                <p class="text-muted max-w-xl mx-auto">Últimas transformações em <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="text-accent underline hover:no-underline">@yurihairstyle</a></p>
+            </header>
+            <div id="portfolioFeed" class="portfolio-feed" aria-live="polite">
+                <!-- Loading -->
+                <div id="portfolioLoading" class="portfolio-loading flex justify-center items-center py-16">
+                    <div class="portfolio-loading-dots" aria-hidden="true"></div>
+                </div>
+                <!-- Grid: filled by JS from Instagram API (or fallback) -->
+                <div id="portfolioGrid" class="portfolio-grid hidden"></div>
+                <!-- Fallback -->
+                <div id="portfolioFallback" class="portfolio-fallback hidden text-center py-12">
+                    <p class="text-muted mb-6">Veja meu trabalho e as últimas transformações no Instagram.</p>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="btn-secondary inline-block">Ver no Instagram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Background Section 3 -->
+    <section class="video-section">
+        <div class="video-background">
+            <video autoplay loop muted playsinline class="video-element" onerror="this.style.display='none';">
+                <source src="video/divider-3.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact py-24 relative" data-whatsapp-number="5534991037991" data-whatsapp-default-message="Oi, gostaria de agendar um horário!">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <header class="contact-header text-center mb-14" data-scroll>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 tracking-wide">Agende um Horário</h2>
+                <p class="text-muted text-lg max-w-xl mx-auto">A forma mais rápida é pelo WhatsApp. Prefere e-mail? Manda uma mensagem abaixo — respondo o mais breve possível.</p>
+            </header>
+
+            <!-- Primary CTA: WhatsApp -->
+            <div id="whatsappCard" class="contact-card contact-card-whatsapp mb-8" data-scroll>
+                <div class="contact-card-inner">
+                    <span class="contact-card-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    </span>
+                    <div class="contact-card-content">
+                        <h3 class="contact-card-title">Fale pelo WhatsApp</h3>
+                        <p class="contact-card-desc">Respostas rápidas, envie referências e agende seu horário. Costumo responder em poucas horas.</p>
+                        <a id="whatsappLink" href="#" class="btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp para conversar">
+                            <span class="btn-whatsapp-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></span>
+                            Mandar mensagem
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <p id="contactDivider" class="contact-divider text-center text-sm uppercase tracking-widest mb-8" data-scroll>ou envie um e-mail</p>
+
+            <!-- Secondary: Email form -->
+            <div class="contact-card contact-card-email" data-scroll>
+                <form class="contact-form" id="contactForm">
+                    <div class="contact-form-grid">
+                        <div class="contact-field">
+                            <label for="name" class="contact-label">Nome</label>
+                            <input type="text" id="name" name="name" required maxlength="100" minlength="1" autocomplete="name" class="contact-input" placeholder="Seu nome" aria-required="true" aria-label="Seu nome completo">
+                        </div>
+                        <div class="contact-field">
+                            <label for="email" class="contact-label">E-mail</label>
+                            <input type="email" id="email" name="email" required maxlength="255" autocomplete="email" class="contact-input" placeholder="voce@exemplo.com" aria-required="true" aria-label="Seu endereço de e-mail">
+                        </div>
+                        <div class="contact-field contact-field-full">
+                            <label for="message" class="contact-label">Sua mensagem</label>
+                            <textarea id="message" name="message" rows="4" required maxlength="5000" minlength="10" class="contact-input contact-textarea" placeholder="Me conte o que você tem em mente para o seu cabelo…" aria-required="true" aria-label="Sua mensagem"></textarea>
+                            <p class="contact-hint">Mínimo de 10 caracteres</p>
+                        </div>
+                        <div class="contact-field contact-field-full">
+                            <div id="formMessage" class="contact-message hidden" role="alert"></div>
+                            <button type="submit" class="btn-email">Enviar mensagem</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Hero background: smooth crossfade between all images in img/hero/
+        (function() {
+            var HERO_IMAGES = [
+                'img/hero/background-1.jpeg',
+                'img/hero/background-2.jpeg',
+                'img/hero/background-3.jpeg',
+                'img/hero/background-4.jpeg',
+                'img/hero/background-5.jpeg',
+                'img/hero/background-6.jpeg',
+                'img/hero/background-7.jpeg',
+                'img/hero/background-8.jpeg',
+                'img/hero/background-9.jpeg',
+                'img/hero/background-10.jpeg',
+                'img/hero/background-11.jpeg',
+                'img/hero/background-12.jpeg',
+                'img/hero/background-13.jpeg',
+                'img/hero/background-14.jpeg'
+            ];
+            var HERO_DURATION = 6000;
+            var HERO_CROSSFADE_MS = 5000;
+            var nextIndex = 1;
+            var visibleLayer = 'A';
+
+            function preload(url) {
+                var img = new Image();
+                img.src = url;
+            }
+
+            function runHeroSlideshow() {
+                var elA = document.getElementById('heroBgA');
+                var elB = document.getElementById('heroBgB');
+                if (!elA || !elB) return;
+
+                elA.style.backgroundImage = "url('" + HERO_IMAGES[0] + "')";
+                elB.style.backgroundImage = "url('" + HERO_IMAGES[1] + "')";
+                HERO_IMAGES.forEach(preload);
+
+                function setHiddenLayerBackground(el, index) {
+                    el.style.backgroundImage = "url('" + HERO_IMAGES[index] + "')";
+                }
+
+                setInterval(function() {
+                    if (visibleLayer === 'A') {
+                        elB.classList.add('is-visible');
+                        elA.classList.add('is-hidden');
+                        visibleLayer = 'B';
+                        window.setTimeout(function() {
+                            setHiddenLayerBackground(elA, nextIndex);
+                            nextIndex = (nextIndex + 1) % HERO_IMAGES.length;
+                        }, HERO_CROSSFADE_MS);
+                    } else {
+                        elA.classList.remove('is-hidden');
+                        elA.classList.add('is-visible');
+                        elB.classList.remove('is-visible');
+                        visibleLayer = 'A';
+                        window.setTimeout(function() {
+                            setHiddenLayerBackground(elB, nextIndex);
+                            nextIndex = (nextIndex + 1) % HERO_IMAGES.length;
+                        }, HERO_CROSSFADE_MS);
+                    }
+                }, HERO_DURATION);
+            }
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', runHeroSlideshow);
+            } else {
+                runHeroSlideshow();
+            }
+        })();
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const scrollElements = document.querySelectorAll('[data-scroll]');
+            scrollElements.forEach(el => {
+                el.style.opacity = '1';
+            });
+
+            if (typeof ScrollOut !== 'undefined') {
+                try {
+                    document.body.classList.add('scroll-out-initialized');
+                    ScrollOut({ threshold: 0.2, once: true });
+                } catch (e) {
+                    console.warn('ScrollOut initialization failed:', e);
+                }
+            }
+
+            // Header scroll transition
+            const header = document.getElementById('mainHeader');
+            const logoImg = header ? header.querySelector('.header-logo .logo-img') : null;
+            const scrollRange = 420;
+            const logoHeroH = 280;
+            const logoCollapsedH = 140;
+            let smoothProgress = 0;
+            let headerTicking = false;
+
+            function updateHeaderProgress() {
+                const target = Math.min(1, window.pageYOffset / scrollRange);
+                smoothProgress += (target - smoothProgress) * 0.14;
+                header.style.setProperty('--scroll-progress', smoothProgress);
+                if (logoImg) {
+                    var h = logoHeroH - (logoHeroH - logoCollapsedH) * smoothProgress;
+                    logoImg.style.height = h + 'px';
+                    logoImg.style.maxHeight = h + 'px';
+                }
+                if (smoothProgress >= 0.99) header.classList.add('header-scrolled');
+                else header.classList.remove('header-scrolled');
+                if (Math.abs(smoothProgress - target) > 0.002) requestAnimationFrame(updateHeaderProgress);
+                else headerTicking = false;
+            }
+
+            function requestHeaderTick() {
+                if (!headerTicking) {
+                    headerTicking = true;
+                    requestAnimationFrame(updateHeaderProgress);
+                }
+            }
+
+            // Parallax for video sections
+            const videoSections = document.querySelectorAll('.video-background');
+            let ticking = false;
+
+            function updateParallax() {
+                const scrollY = window.pageYOffset;
+                videoSections.forEach(videoBg => {
+                    const videoSection = videoBg.closest('.video-section');
+                    if (!videoSection) return;
+                    const rect = videoSection.getBoundingClientRect();
+                    const sectionTop = rect.top + scrollY;
+                    const viewportBottom = scrollY + window.innerHeight;
+                    const sectionBottom = sectionTop + videoSection.offsetHeight;
+                    if (sectionBottom > scrollY && sectionTop < viewportBottom) {
+                        const parallaxSpeed = 0.3;
+                        const translateY = (scrollY - sectionTop) * parallaxSpeed;
+                        videoBg.style.transform = `translateY(${translateY}px)`;
+                    }
+                });
+                ticking = false;
+            }
+
+            function requestParallaxTick() {
+                if (!ticking) {
+                    window.requestAnimationFrame(updateParallax);
+                    ticking = true;
+                }
+            }
+
+            window.addEventListener('scroll', function() {
+                requestHeaderTick();
+                requestParallaxTick();
+            });
+
+            smoothProgress = Math.min(1, window.pageYOffset / scrollRange);
+            header.style.setProperty('--scroll-progress', smoothProgress);
+            if (logoImg) {
+                var h = logoHeroH - (logoHeroH - logoCollapsedH) * smoothProgress;
+                logoImg.style.height = h + 'px';
+                logoImg.style.maxHeight = h + 'px';
+            }
+            if (smoothProgress >= 0.99) header.classList.add('header-scrolled');
+            updateParallax();
+        });
+
+        // Portfolio: fetch Instagram feed and render grid (or show fallback)
+        (function() {
+            var FEED_API = '/api/instagram-feed';
+            var loading = document.getElementById('portfolioLoading');
+            var grid = document.getElementById('portfolioGrid');
+            var fallback = document.getElementById('portfolioFallback');
+            if (!loading || !grid || !fallback) return;
+
+            function showFallback() {
+                loading.classList.add('hidden');
+                grid.classList.add('hidden');
+                fallback.classList.remove('hidden');
+            }
+
+            function isHttpsUrl(s) {
+                if (typeof s !== 'string' || !s.trim()) return false;
+                return s.trim().toLowerCase().indexOf('https://') === 0;
+            }
+
+            fetch(FEED_API)
+                .then(function(r) { return r.json(); })
+                .then(function(data) {
+                    if (data.ok && data.feed && data.feed.length > 0) {
+                        var html = data.feed.map(function(item) {
+                            var link = isHttpsUrl(item.link) ? item.link : '#';
+                            var imgSrc = isHttpsUrl(item.thumb) ? item.thumb : (isHttpsUrl(item.url) ? item.url : '');
+                            var caption = (item.caption || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+                            if (!imgSrc) return '';
+                            return '<div class="portfolio-item" data-scroll><a href="' + link + '" target="_blank" rel="noopener noreferrer" aria-label="View on Instagram"><img src="' + imgSrc + '" alt="" loading="lazy">' + (caption ? '<p class="portfolio-caption">' + caption + '</p>' : '') + '</a></div>';
+                        }).filter(Boolean).join('');
+                        if (html) {
+                            loading.classList.add('hidden');
+                            grid.innerHTML = html;
+                            grid.classList.remove('hidden');
+                            fallback.classList.add('hidden');
+                            if (typeof ScrollOut !== 'undefined') {
+                                try { ScrollOut(); } catch (e) {}
+                            }
+                        } else {
+                            showFallback();
+                        }
+                    } else {
+                        showFallback();
+                    }
+                })
+                .catch(function() { showFallback(); });
+        })();
+
+        // WhatsApp: build wa.me link; hide card if no number
+        document.addEventListener('DOMContentLoaded', function() {
+            const contact = document.getElementById('contact');
+            const whatsappCard = document.getElementById('whatsappCard');
+            const whatsappLink = document.getElementById('whatsappLink');
+            if (!contact || !whatsappLink) return;
+            const number = (contact.dataset.whatsappNumber || '').replace(/\D/g, '');
+            const defaultMsg = (contact.dataset.whatsappDefaultMessage || 'Oi, gostaria de agendar um horário!').trim();
+            if (number.length < 10) {
+                if (whatsappCard) whatsappCard.style.display = 'none';
+                var divider = document.getElementById('contactDivider');
+                if (divider) divider.style.display = 'none';
+                return;
+            }
+            whatsappLink.href = 'https://wa.me/' + number + '?text=' + encodeURIComponent(defaultMsg);
+        });
+
+        // Form handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            if (!contactForm) return;
+
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                const form = this;
+                const formMessage = document.getElementById('formMessage');
+                const submitButton = form.querySelector('button[type="submit"]');
+
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim().toLowerCase();
+                const message = document.getElementById('message').value.trim();
+
+                const MAX_NAME_LENGTH = 100;
+                const MAX_EMAIL_LENGTH = 255;
+                const MAX_MESSAGE_LENGTH = 5000;
+                const MIN_MESSAGE_LENGTH = 10;
+
+                if (!name || !email || !message) {
+                    showMessage('Por favor, preencha todos os campos obrigatórios.', 'error');
+                    return;
+                }
+                if (name.length > MAX_NAME_LENGTH) {
+                    showMessage(`O nome deve ter menos de ${MAX_NAME_LENGTH} caracteres.`, 'error');
+                    return;
+                }
+                if (email.length > MAX_EMAIL_LENGTH) {
+                    showMessage(`O e-mail deve ter menos de ${MAX_EMAIL_LENGTH} caracteres.`, 'error');
+                    return;
+                }
+                if (message.length < MIN_MESSAGE_LENGTH) {
+                    showMessage(`A mensagem deve ter pelo menos ${MIN_MESSAGE_LENGTH} caracteres.`, 'error');
+                    return;
+                }
+                if (message.length > MAX_MESSAGE_LENGTH) {
+                    showMessage(`A mensagem deve ter menos de ${MAX_MESSAGE_LENGTH} caracteres.`, 'error');
+                    return;
+                }
+
+                const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+                if (!emailRegex.test(email)) {
+                    showMessage('Por favor, insira um endereço de e-mail válido.', 'error');
+                    return;
+                }
+
+                submitButton.disabled = true;
+                submitButton.textContent = 'Enviando...';
+
+                const formData = { name, email, message };
+                const API_ENDPOINT = '/api/send-email';
+
+                fetch(API_ENDPOINT, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                })
+                .then(async response => {
+                    const data = await response.json();
+                    if (response.ok && data.success) {
+                        showMessage(data.message || 'Obrigado! Entrarei em contato em breve.', 'success');
+                        form.reset();
+                    } else {
+                        throw new Error(data.error || data.message || `HTTP ${response.status}: Falha ao enviar`);
+                    }
+                })
+                .catch(error => {
+                    const errorMsg = error.message || 'Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente.';
+                    showMessage(errorMsg, 'error');
+                })
+                .finally(() => {
+                    submitButton.disabled = false;
+                    submitButton.textContent = 'Enviar mensagem';
+                });
+            });
+        });
+
+        function showMessage(text, type) {
+            const formMessage = document.getElementById('formMessage');
+            const sanitizedText = text.replace(/[<>]/g, '');
+            formMessage.textContent = sanitizedText;
+            formMessage.className = type === 'success'
+                ? 'contact-message block bg-green-900'
+                : 'contact-message block bg-red-900';
+            formMessage.classList.remove('hidden');
+            formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            setTimeout(function() { formMessage.classList.add('hidden'); }, 5000);
+        }
+    </script>
+</body>
+</html>
