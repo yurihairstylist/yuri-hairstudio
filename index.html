@@ -30,7 +30,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 </head>
 <body class="bg-warm-dark text-white overflow-x-hidden">
@@ -40,6 +40,11 @@
             <a href="#hero" class="header-logo" aria-label="Voltar ao topo">
                 <img src="img/logo.PNG" alt="Yuri Hair Stylist Logo" class="logo-img">
             </a>
+            <div class="hero-branding">
+                <h1 class="hero-title">Yuri</h1>
+                <p class="hero-subtitle">hairstylist&nbsp;&nbsp;·&nbsp;&nbsp;uberlândia</p>
+            </div>
+            <a href="#portfolio" class="hero-cta">Ver meu trabalho</a>
         </div>
     </header>
 
@@ -83,6 +88,14 @@
         </div>
     </section>
 
+    <!-- Marquee Strip -->
+    <div class="marquee-section" aria-hidden="true">
+        <div class="marquee-track">
+            <span class="marquee-content">CORTE&nbsp;&nbsp;·&nbsp;&nbsp;DEGRADÊ&nbsp;&nbsp;·&nbsp;&nbsp;FREESTYLE&nbsp;&nbsp;·&nbsp;&nbsp;CRESPO&nbsp;&nbsp;·&nbsp;&nbsp;IDENTIDADE&nbsp;&nbsp;·&nbsp;&nbsp;ESTILO&nbsp;&nbsp;·&nbsp;&nbsp;BARBEARIA&nbsp;&nbsp;·&nbsp;&nbsp;ARTE&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+            <span class="marquee-content">CORTE&nbsp;&nbsp;·&nbsp;&nbsp;DEGRADÊ&nbsp;&nbsp;·&nbsp;&nbsp;FREESTYLE&nbsp;&nbsp;·&nbsp;&nbsp;CRESPO&nbsp;&nbsp;·&nbsp;&nbsp;IDENTIDADE&nbsp;&nbsp;·&nbsp;&nbsp;ESTILO&nbsp;&nbsp;·&nbsp;&nbsp;BARBEARIA&nbsp;&nbsp;·&nbsp;&nbsp;ARTE&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+        </div>
+    </div>
+
     <!-- Video Background Section 2 -->
     <section class="video-section">
         <div class="video-background">
@@ -98,7 +111,7 @@
         <div class="container mx-auto px-6">
             <header class="portfolio-header text-center mb-14" data-scroll>
                 <h2 class="text-4xl font-bold mb-4">Meu Trabalho</h2>
-                <p class="text-muted max-w-xl mx-auto">Últimas transformações em <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="text-accent underline hover:no-underline">@yurihairstyle</a></p>
+                <p class="text-muted max-w-xl mx-auto">Últimas transformações em <a href="https://www.instagram.com/yurihairstyle/" target="_blank" rel="noopener noreferrer" class="text-accent underline hover:no-underline">@yurihairstyle</a></p>
             </header>
             <div id="portfolioFeed" class="portfolio-feed" aria-live="polite">
                 <!-- Loading -->
@@ -110,7 +123,7 @@
                 <!-- Fallback -->
                 <div id="portfolioFallback" class="portfolio-fallback hidden text-center py-12">
                     <p class="text-muted mb-6">Veja meu trabalho e as últimas transformações no Instagram.</p>
-                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="btn-secondary inline-block">Ver no Instagram</a>
+                    <a href="https://www.instagram.com/yurihairstyle/" target="_blank" rel="noopener noreferrer" class="btn-secondary inline-block">Ver no Instagram</a>
                 </div>
             </div>
         </div>
